@@ -2,13 +2,13 @@ class Question
   attr_reader :q
 
   def initialize
-    @question1 = rand(1..20)
-    @question2 = rand(1..20)
-    @q = "What does #{@question1} plus #{@question2} equal?"
+    @number1 = rand(1..20)
+    @number2 = rand(1..20)
+    @q = "What does #{@number1} plus #{@number2} equal?"
   end
 
   def is_correct(answer)
-    correct = @question1 + @question2
+    correct = @number1 + @number2
     answer.to_i == correct ? true : false
   end
 end
